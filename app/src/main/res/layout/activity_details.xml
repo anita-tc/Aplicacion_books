@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".DetailsActivity">
+
+    <!--Permite usar capas y acomodar elementos una encima de otro-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/contenedorPortadas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent">
+
+            <!-- Imagen de la portada del libro -->
+            <ImageView
+                android:id="@+id/imgPortadaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <!-- Incluir degradado -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="bottom"/>
+
+            <ImageButton
+                android:id="@+id/btnFavorito"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_boton_circular"
+                android:padding="15dp"
+                android:src="@drawable/outline_favorite_24"
+                app:tint="@color/white"/>
+
+        </FrameLayout>
+
+        <!-- Datos del libro para mostrar en el archivo -->
+        <TextView
+            android:id="@+id/tvTituloLibroDetalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Título del libro"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contenedorPortadas"/>
+
+        <TextView
+            android:id="@+id/tvAutorLibroDetalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Autor del libro"
+            android:textColor="#E0E0E0"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTituloLibroDetalle" />
+
+        <TextView
+            android:id="@+id/tvDetallesLibro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Detalles"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAutorLibroDetalle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

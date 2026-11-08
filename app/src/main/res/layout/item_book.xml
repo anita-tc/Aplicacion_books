@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgPortadaLibro"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#9EDFCB"
+        android:scaleType="centerCrop"
+        android:contentDescription="Portada del libro" />
+
+    <TextView
+        android:id="@+id/tvNombreLibro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Nombre del libro"
+        android:textColor="#222222"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNombreAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Nombre del autor"
+        android:textColor="#777777"
+        android:textSize="12sp" />
+
+</LinearLayout>

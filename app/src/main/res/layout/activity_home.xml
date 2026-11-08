@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ENCABEZADO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:contentDescription="Logo de libros" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:contentDescription="Perfil de usuario" />
+
+        </LinearLayout>
+
+        <!-- GENEROS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Géneros"
+            android:textColor="#222222"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnComedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Comedia"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#176F59" />
+
+                <Button
+                    android:id="@+id/btnTerror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Terror"
+                    android:textAllCaps="false"
+                    android:textColor="#222222"
+                    android:backgroundTint="#F0F0F0" />
+
+                <Button
+                    android:id="@+id/btnRomance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Romance"
+                    android:textAllCaps="false"
+                    android:textColor="#222222"
+                    android:backgroundTint="#F0F0F0" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- RECOMENDACIONES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Recomendaciones"
+            android:textColor="#222222"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/contenedorRecomendaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <!-- CONTINUAR LEYENDO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Continuar leyendo"
+            android:textColor="#222222"
+            android:textSize="24sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/contenedorContinuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>
