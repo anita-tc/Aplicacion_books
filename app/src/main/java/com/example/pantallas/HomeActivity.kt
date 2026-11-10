@@ -97,17 +97,20 @@ class HomeActivity : AppCompatActivity() {
                 .into(imgPortada)
 
             // Evento de clic para abrir la pantalla de detalles y enviar la información
+
             vistaLibro.setOnClickListener {
+
                 val intent = Intent(this@HomeActivity, DetailsActivity::class.java)
-                intent.putExtra("ID_LIBRO", libro.key.hashCode().toLong())
-                intent.putExtra("TITULO_LIBRO", libro.title)
+
+                intent.putExtra("ID_LIBRO", libro.key ?: "")
+                intent.putExtra("TITULO_LIBRO", libro.title ?: "Libro sin titulo")
                 intent.putExtra("AUTOR_LIBRO", libro.authorName?.joinToString(", ") ?: "Desconocido")
-                intent.putExtra("EDITORIAL_LIBRO", libro.firstPublishYear?.toString() ?: "Desconocido")
-                intent.putExtra("PAGINAS_LIBRO", 0)
+                intent.putExtra("ANIO_LIBRO", libro.firstPublishYear ?: 0)
                 intent.putExtra("IMAGEN_LIBRO", libro.obtenerImagenGrande())
 
                 startActivity(intent)
             }
+
 
             contenedor.addView(vistaLibro)
         }
