@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "934148558051",
+    "project_id": "app-libros-4f169",
+    "storage_bucket": "app-libros-4f169.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934148558051:android:c85dc93c0aa3d3ee6209d6",
+        "android_client_info": {
+          "package_name": "com.example.pantallas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934148558051-lj0b7mj8psm3p94fqt3pa6297sk5336c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pantallas",
+            "certificate_hash": "47e589e3c90371d35e57311572ff6dc2cd7b8f10"
+          }
+        },
+        {
+          "client_id": "934148558051-mno2csg804fi4hjhjnlre886mnvrja82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhxwgXlLvpGSc1JuqsuGltP8Y9PhgMUN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934148558051-mno2csg804fi4hjhjnlre886mnvrja82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
